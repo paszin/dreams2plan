@@ -10,6 +10,8 @@ angular
     .module('core')
     .controller('HomeController', ['$scope',
         function($scope) {
+            
+            $scope.welcomeMessage = "When dreams become alive";
 
         }
     ]);
