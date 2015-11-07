@@ -23,45 +23,27 @@
   </head>
 
   <body>
-    <!-- =================== Navigation bar =================== -->
-    <header class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand visible-xs" href="#">
-                        angularjsapp
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <div class="header-placeholder"></div>
-    <div role="main">
-        <header class="bs-header text-center" id="overview">
-            <div class="container">
-                <h1 id="app-heading">
-                    AngularJs Cordova application
-                </h1>
-            </div>
-        </header>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <section id="uiview" ui-view></section>
-                </div>
-            </div>
-        </div>
-        <!-- /.container -->
-    </div>
-    <!-- /.main -->
-
-    <footer class="footer">
-        <div class="container">
-            <p>Code licensed under <a href="https://github.com/keshavos/generator-angularjs-cordova/">MIT License</a>.</p>
-        </div>
-    </footer>
+        <md-content layout="column" layout-fill>
+        <md-toolbar class="md-primary">
+          <div class="md-toolbar-tools">
+            <md-button href="#/dashboard">
+                <md-icon md-font-icon="fa-home" class="fa fa-2x"md-icon>
+            </md-button>
+        
+            Dreams2Plan
+            
+            <span flex></span>
+            <md-button class="md-icon-button" aria-label="Favorite">
+              <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="More">
+              <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+            </md-button>
+          </div>
+        </md-toolbar>
+        <div ui-view flex layout="column"></div>
+      </md-content>
 
     <!-- build:js scripts/vendor.js -->
         <!-- injector:bowerjs -->
@@ -89,7 +71,9 @@
         <script src="modules/core/core.js"></script>
         <script src="modules/core/config/routes.js"></script>
         <script src="modules/core/controllers/home.js"></script>
+        <script src="modules/core/controllers/login.js"></script>
         <!-- endinjector -->
+    <script src="scripts/controllers/login.js"></script>
     <!-- endbuild -->
 
   </body>
