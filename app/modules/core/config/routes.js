@@ -34,5 +34,10 @@ angular
                     templateUrl: 'modules/core/views/home.html',
                     controller: 'HomeController'
             })
+                .state('demo', {
+                    url: '/share',
+                    templateUrl: 'modules/core/views/demo.html'
+                    
+            })
         }
     ]);
