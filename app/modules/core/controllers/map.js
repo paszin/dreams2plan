@@ -25,6 +25,10 @@ angular
                     "value": 0
 		        },
                 {
+                    "countryCode": "THA",
+                    "value": 50
+		        },
+                {
                     "countryCode": "USA",
                     "value": 100
 		        },
