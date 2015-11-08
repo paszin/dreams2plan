@@ -5,9 +5,11 @@ angular
 
 angular
     .module(ApplicationConfiguration.applicationModuleName)
-    .config(['$locationProvider',
-        function($locationProvider) {
+    .config(['$locationProvider', '$mdThemingProvider',
+        function($locationProvider, $mdThemingProvider) {
             $locationProvider.hashPrefix('!');
+              $mdThemingProvider.theme('default')
+                .primaryPalette('red');
         }
     ]);
 
