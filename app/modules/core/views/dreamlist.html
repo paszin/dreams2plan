@@ -4,12 +4,13 @@
   <h1 class="dreamlistheader">My DreamBox</h1>
   </div>
 <div ng-Controller="DreamlistController" layout="row" layout-wrap layout-align="center start" >
-<md-card ng-repeat="dream in dreams" style="width:300px;">
+<md-card ng-repeat="dream in dreams" ng-click="showAdventure(dream)" style="width:300px;">
   <div ng-style="{'background-image': 'url(' + dream.imagePath + ')'}" class="md-card-image dreamimage" alt="Image not Found!" layout="row" layout-align="center center">
   <i ng-if="dream.visited == 'true'" class="fa fa-check fa-4x"/>
   </div>
   <md-card-content>
     <h2 class="md-title" layout-align="center center">{{dream.title}}</h2>
+      <p>Achieve {{dream.dreams.length}} dreams there</p>
   </md-card-content>
 
   <div flex> </div>
