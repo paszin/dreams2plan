@@ -8,7 +8,7 @@ body {
 }
 
 #backgroundimage {
-  background-position: center; 
+  background-position: center;
   background-image: url('../img/beach.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,12 +18,13 @@ body {
 .tweettrip{
   color: #4099FF;
 }
+
 .dreamimage {
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
-  
+
 }
 
 
@@ -55,7 +56,7 @@ section {
       -moz-filter: grayscale(100%);
         -o-filter: grayscale(100%);
        -ms-filter: grayscale(100%);
-           filter: grayscale(100%); 
+           filter: grayscale(100%);
 }
 
 
@@ -63,6 +64,7 @@ section {
     width: 150px;
     height: 150px
 }
+
 
 
 .footerdream {
