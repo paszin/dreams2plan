@@ -17,7 +17,8 @@ angular
                     imagePath: "../img/dubai.jpg",
                     content: "",
                     visited: "true",
-                    dreams: ["huge tower", "Opt2", "Opt3"]
+                    dreams: ["Go to the top of Burj Khalifa", "Visit the Ferrari World", "Go for a desert safari"],
+                    wiki: "https://en.wikipedia.org/wiki/Dubai"
 
 				 },
 
@@ -26,8 +27,8 @@ angular
                     imagePath: "../img/great_wall_china.jpg",
                     content: "",
                     visited: "false",
-                    dreams: ["huge tower", "Opt3"],
-                    price: 800
+                    dreams: ["Participate in the Great Wall Marathon", "Go for paragliding"],
+                    wiki: "https://en.wikipedia.org/wiki/Great_Wall_of_China"
 				 },
 
                 {
@@ -35,8 +36,8 @@ angular
                     imagePath: "../img/Yosemite.jpg",
                     content: "",
                     visited: "false",
-                    dreams: ["huge tower", "Opt2", "Opt3"],
-                    price: 800
+                    dreams: ["Go hiking", "Horse riding"],
+                    wiki: "https://en.wikipedia.org/wiki/Yosemite_National_Park"
 				 },
 
                 {
@@ -44,8 +45,8 @@ angular
                     imagePath: "../img/Paris.jpg",
                     content: "",
                     visited: "false",
-                    dreams: ["huge tower", "Opt2", "Opt3"],
-                    price: 800
+                    dreams: ["Visit the art gallery", "Visit the Eiffel Tower", "Visit the Musee du Louvre"],
+                    wiki: "https://en.wikipedia.org/wiki/Category:Art_museums_and_galleries_in_Paris"
 				 },
 
                 {
@@ -53,8 +54,8 @@ angular
                     imagePath: "../img/Portugal.jpg",
                     content: "",
                     visited: "false",
-                    dreams: ["huge tower", "Opt2", "Opt3"],
-                    price: 800
+                    dreams: ["Visit Lisbon Oceanarium", "Visit the National Palace of Pena", "Visit the Ponta da Piedade"],
+                    wiki: "https://en.wikipedia.org/wiki/Portugal"
 				 },
 
 
@@ -63,18 +64,27 @@ angular
                     imagePath: "../img/Bungee_Jumping.jpg",
                     content: "",
                     visited: "true",
-                    dreams: ["huge tower", "Opt2", "Opt3"],
-                    price: 800
+                    dreams: ["Go Bungee Jumping"],
+                    wiki: "https://en.wikipedia.org/wiki/Nevis_Highwire_Platform"
 				 },
 
                 {
-                    title: "Boom,Belgium",
+                    title: "Boom, Belgium",
                     imagePath: "../img/tomorrowland.jpg",
                     content: "",
                     visited: "false",
-                    dreams: ["huge tower", "Opt2", "Opt3"],
-                    price: 800
-				 }
+                    dreams: ["Attend Tomorrowland"],
+                    wiki: "https://en.wikipedia.org/wiki/Tomorrowland_(festival)"
+                },
+
+                {
+                    title: "Tahiti",
+                    imagePath: "../img/tahiti.png",
+                    content: "",
+                    visited: "false",
+                    dreams: ["Party on a private yacht", "Scuba dive"],
+                    wiki: "https://en.wikipedia.org/wiki/Tahiti"
+                }
 
 			    ];
 

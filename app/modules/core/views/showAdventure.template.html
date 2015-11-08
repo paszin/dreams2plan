@@ -23,16 +23,16 @@
 -->
                 </div>
                 </md-input-container>
-                <h2>Items from your dreamlist</h2>
+                <h2>Checklist for the trip</h2>
                 <div ng-repeat="item in adventure.dreams">
                 <p>{{item}}</p>
-                
+
                 </div>
-                
+
             </div>
         </md-dialog-content>
         <md-dialog-actions layout="row">
-            <md-button href="http://en.wikipedia.org/wiki/Mango" target="_blank" md-autofocus>
+            <md-button href="{{adventure.wiki}}" target="_blank" md-autofocus>
                 More on Wikipedia
             </md-button>
             <span flex></span>
