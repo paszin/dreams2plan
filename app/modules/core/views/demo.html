@@ -1,0 +1,17 @@
+<div ng-Controller="MapController">
+    <world-map flex world-data="worldData" value-range="valueRange" color-range="colorRange" dimension="dimension" map-width="mapWidth" descriptive-text="descriptiveText" country-fill-color="countryFillColor" country-border-color="countryBorderColor"></world-map>
+</div>
+
+ <div ng-Controller="ProfileController" layout="column" layout-align="center center" layout-margin>
+                <p style="font-size:25px">Achievements by {{name}}</p>
+                <div layout="row" layout-align="center center" layout-wrap>
+                    <div ng-repeat="badge in badges" layout="column" layout-align="center center"><img layout-margin class="badgesize" ng-if="badge.achieved" ng-src="{{badge.file}}" />
+                        <p ng-if="badge.achieved">{{badge.name}}</p>
+                    </div>
+                </div>
+                <div layout="row" layout-align="center center" layout-wrap>
+                    <div ng-repeat="badge in badges" layout="column" layout-align="center center"><img layout-margin ng-if="badge.achieved == false" class="badgesize not-achieved" ng-src="{{badge.file}}" />
+                        <p ng-if="badge.achieved == false">{{badge.name}}</p>
+                    </div>
+                </div>
+            </div>

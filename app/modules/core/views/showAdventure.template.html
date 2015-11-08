@@ -14,32 +14,32 @@
                 <h2>Travel to {{adventure.title}} and achieve {{adventure.dreams.length}} dreams</h2>
                 <img style="margin: auto; max-width: 100%;" alt="Lush mango tree" src="{{adventure.imagePath}}">
                 <div>
+<!--
                     <p>Notify when price drops under </p>
                     <md-input-container class="md-icon-float md-icon-right md-block">
                         <div flex="20" layout="row">
                             $<input ng-model="adventure.price" type="number" step="20" flex>
                         </div>
+-->
                 </div>
                 </md-input-container>
-                <h2>Items from your dreamlist</h2>
+                <h2>Checklist for the trip</h2>
                 <div ng-repeat="item in adventure.dreams">
                 <p>{{item}}</p>
-                
+
                 </div>
-                
+
             </div>
         </md-dialog-content>
         <md-dialog-actions layout="row">
-            <md-button href="http://en.wikipedia.org/wiki/Mango" target="_blank" md-autofocus>
+            <md-button href="{{adventure.wiki}}" target="_blank" md-autofocus>
                 More on Wikipedia
             </md-button>
             <span flex></span>
             <md-button ng-click="answer('not useful')">
-                Not Useful
+                Activate Notifications
             </md-button>
-            <md-button ng-click="answer('useful')" style="margin-right:20px;">
-                Useful
-            </md-button>
+
         </md-dialog-actions>
     </form>
 </md-dialog>
