@@ -12,7 +12,8 @@
         <md-dialog-content>
             <div class="md-dialog-content">
                 <h2>Travel to {{adventure.title}} and achieve {{adventure.dreams.length}} dreams</h2>
-                <img style="margin: auto; max-width: 100%;" alt="Lush mango tree" src="{{adventure.imagePath}}">
+                <div ng-style="{'background-image': 'url(' + adventure.imagePath + ')'}" class="md-card-image dreamimage" alt="Image not Found!" style="width:95%; height:200px">
+                </div>
                 <div>
 <!--
                     <p>Notify when price drops under </p>
@@ -25,9 +26,12 @@
                 </md-input-container>
                 <h2>Checklist for the trip</h2>
                 <div layout="row" layout-fill layout-align="space-around start">
-                    <div ng-repeat="item in adventure.dreams" layout="column" layout-align="start center">
+                    <div ng-if="item.name" ng-repeat="item in adventure.dreams" layout="column" layout-align="start center">
                         <img src="{{item.img}}" style="height:100px; width:100px"/>
                         <p>{{item.name}}</p>
+                    </div>
+                    <div ng-if="!item.name" ng-repeat="item in adventure.dreams" layout="column" layout-align="start center">
+                        <p>{{item}}</p>
                     </div>
                 </div>
 
