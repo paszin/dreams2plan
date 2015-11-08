@@ -2,17 +2,17 @@
 
     <div layout="row" layout-align="center center" flex>
         <div style="max-width:800px" flex layout-fill layout="column">
-            <div layout="row" layout-align="space-around center" layout-margin>
-                <img width="150px" height="150px" layout-margin ng-src="{{imgUrl}}" class="profile-avatar" />
+            <div layout="row" layout-align="center center" layout-margin>
+                <img width="100px" height="100px" layout-margin ng-src="{{imgUrl}}" class="profile-avatar" />
                 <div>
                     <h1>Hey {{name}}, follow your dreams!</h1>
-                    <span layout="row">
-                    <md-input-container flex="50">
+                    <div layout="row" layout-fill>
+                    <md-input-container flex>
                         <label>I would like to...</label>
                         <input ng-submit="login()" ng-model="user.dream">
                     </md-input-container>
                         <md-button ng-click="saveDream()">Submit</md-button>
-                        </span>
+                    </div>
                 </div>
             </div>
 
@@ -58,14 +58,9 @@
 
     </div>
 
-    <div class="footer">
-        <div class="container">
-            <p class="text-muted">
-                <md-button class="md-fab md-primary" aria-label="Eat cake" ng-click="showAddDream($event)"><i class="fa fa-plus"></i>
-                </md-button>
-            </p>
-
-        </div>
+    <div  layout="row" layoout-align="end end" style="position:fixed; top:580px; left:1180px;">
+        <md-button class="md-fab md-primary" aria-label="Eat cake" ng-click="showAddDream($event)"><i class="fa fa-plus"></i>
+        </md-button>
     </div>
 
 </div>
