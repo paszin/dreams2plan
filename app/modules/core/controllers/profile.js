@@ -13,7 +13,7 @@ angular
         function ($scope, $mdDialog, $http) {
 
             $scope.imgUrl = "https://pbs.twimg.com/profile_images/651641074373427200/fkGcfovZ.jpg";
-            $scope.name = "Fabi";
+            $scope.name = "Pascal";
             $scope.stats = {
                 "continents": 3,
                 "countries": 8,
