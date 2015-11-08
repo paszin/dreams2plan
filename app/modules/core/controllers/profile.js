@@ -9,8 +9,8 @@
 angular
     .module('core')
     .controller('ProfileController', [
-        '$scope',
-        function ($scope) {
+        '$scope', '$mdDialog', 
+        function ($scope, $mdDialog) {
 
             $scope.imgUrl = "https://pbs.twimg.com/profile_images/651641074373427200/fkGcfovZ.jpg";
             $scope.name = "Fabi";
@@ -45,5 +45,35 @@ angular
                 "achieved": false
             }];
 
+
+            $scope.showAddDream = function (ev) {
+                $mdDialog.show({
+                        controller: DialogController,
+                        templateUrl: '/modules/core/views/adddream.template.html',
+                        parent: angular.element(document.body),
+                        targetEvent: ev,
+                        clickOutsideToClose: true
+                    })
+                    .then(function (answer) {
+                        $scope.status =  answer;
+                        console.log(answer);
+                    }, function () {
+                        $scope.status = undefined;
+                    });
+            };
         }
 ]);
+
+
+
+function DialogController($scope, $mdDialog) {
+  $scope.hide = function() {
+    $mdDialog.hide();
+  };
+  $scope.cancel = function() {
+    $mdDialog.cancel();
+  };
+  $scope.save = function() {
+    $mdDialog.hide($scope.user.dream);
+  };
+}

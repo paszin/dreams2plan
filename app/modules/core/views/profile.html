@@ -1,5 +1,5 @@
-<div layout="row" layout-align="center center">
-    <div style="max-width:800px">
+<div layout="row" layout-align="center center" flex>
+    <div style="max-width:800px" flex layout-fill layout="column">
         <div layout="column" layout-align="space-around center" layout-margin>
             <img width="150px" height="150px" layout-margin ng-src="{{imgUrl}}" class="profile-avatar" />
             <h1>{{name}}</h1>
@@ -16,16 +16,17 @@
                 <h1>{{stats.countries}}</h1>
                 <h5>Countries</h5>
             </div>
-             <div flex="25" layout="column" layout-align="center center">
+            <div flex="25" layout="column" layout-align="center center">
                 <h1>{{stats.trips}}</h1>
                 <h5>Trips</h5>
             </div>
             <div flex="25" layout="column" layout-align="center center">
                 <h1>{{stats.miles/1000}}k</h1>
                 <h5>Miles</h5>
-            </div> 
+            </div>
         </div>
         <md-divider></md-divider>
+        <div flex></div>
         <div layout="column" layout-align="center center" layout-margin>
             <p>ACHIEVEMENTS</p>
             <div layout="row" layout-align="center center" layout-wrap>
@@ -40,7 +41,16 @@
             </div>
         </div>
 
-
     </div>
 
+
+
+</div>
+
+ <div class="footer">
+  <div class="container">
+    <p class="text-muted"> <md-button class="md-fab md-primary" aria-label="Eat cake" ng-click="showAddDream($event)"><i class="fa fa-plus"></i>
+        </md-button></p>
+
+  </div>
 </div>

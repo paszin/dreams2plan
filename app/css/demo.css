@@ -49,3 +49,10 @@ section {
     width: 150px;
     height: 150px
 }
+
+
+.footerdream {
+  opacity: 1; 
+  background-color: rgba(0,0,0,0.6); 
+  // The rest of your CSS
+}
