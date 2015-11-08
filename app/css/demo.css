@@ -35,3 +35,17 @@ section {
 .profile-avatar {
    border-radius: 50%;
 }
+
+.not-achieved {
+     -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+       -ms-filter: grayscale(100%);
+           filter: grayscale(100%); 
+}
+
+
+.badgesize {
+    width: 150px;
+    height: 150px
+}
