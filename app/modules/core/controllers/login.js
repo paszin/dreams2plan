@@ -13,7 +13,7 @@ angular
         function($rootScope, $scope) {
             
             $scope.user = {};
-            $scope.user.name = "Fabi";
+            $scope.user.name = "Pascal";
             $scope.user.password = "undefined";
             
             $scope.login = function() {
