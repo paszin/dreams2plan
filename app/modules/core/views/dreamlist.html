@@ -1,0 +1,26 @@
+
+<div layout="row" layout-wrap>
+<md-card ng-repeat="dream in dreams" style="width:300px">
+  <img ng-src="{{dream.imagePath}}" class="md-card-image" alt="Washed Out">
+  <md-card-content>
+    <h2 class="md-title">{{dream.title}}</h2>
+    <p>
+      {{dream.content}}
+    </p>
+  </md-card-content>
+
+  <md-card-actions layout="row" layout-align="end center">
+
+          <md-button aria-label="Twitter">
+             <md-icon icon="img/icons/twitter.svg"></md-icon>
+          </md-button>
+          <md-button aria-label="Facebook">
+          </md-button>
+          <md-button aria-label="Google Hangout">
+          </md-button>
+        </md-fab-actions>
+
+  </md-card-actions>
+</md-card>
+
+</div>
