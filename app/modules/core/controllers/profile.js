@@ -15,9 +15,9 @@ angular
             $scope.imgUrl = "https://pbs.twimg.com/profile_images/651641074373427200/fkGcfovZ.jpg";
             $scope.name = "Fabi";
             $scope.stats = {
-                "continents": 2,
-                "countries": 18,
-                "trips": 13,
+                "continents": 3,
+                "countries": 8,
+                "trips": 12,
                 "miles": 7000
             };
 
