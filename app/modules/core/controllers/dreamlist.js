@@ -17,7 +17,9 @@ angular
 					title:"Dubai",
 					imagePath:"../img/dubai.jpg",
 					content:"",
-					visited:"true"
+					visited:"true",
+                    options: ["Opt1", "Opt2", "Opt3"]
+
 				 },
 
 				 {
