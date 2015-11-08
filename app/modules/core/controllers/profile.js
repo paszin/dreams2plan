@@ -9,55 +9,41 @@
 angular
     .module('core')
     .controller('ProfileController', [
-        '$scope', 
+        '$scope',
         function ($scope) {
 
             $scope.imgUrl = "https://pbs.twimg.com/profile_images/651641074373427200/fkGcfovZ.jpg";
             $scope.name = "Fabi";
+            $scope.stats = {
+                "continents": 2,
+                "countries": 18,
+                "trips": 13,
+                "miles": 7000
+            };
 
 
             var baseDir = "/img/badges/";
             $scope.badges = [{
                 "file": baseDir + "badge1.png",
                 "name": "Climed a mountain",
-                "achieved" : true
-            },{
-                "file": baseDir + "badge2.png",
-                "name": "Climed a mountain",
-                "achieved" : true
-            },{
-                "file": baseDir + "badge3.png",
-                "name": "Climed a mountain",
-                "achieved" : true
-            },{
-                "file": baseDir + "badge 4.png",
-                "name": "Climed a mountain",
-                "achieved" : true
-            },{
-                "file": baseDir + "badge 5.png",
-                "name": "Climed a mountain",
-                "achieved" : true
-            },{
-                "file": baseDir + "badge 6.png",
-                "name": "Climed a mountain",
-                "achieved" : true
+                "achieved": true
             }, {
-                "file": baseDir + "badge 7.png",
-                "name": "Climed a mountain",
-                "achieved" : false
-            },{
+                "file": baseDir + "badge2.png",
+                "name": "Art lovers",
+                "achieved": true
+            }, {
                 "file": baseDir + "badge3.png",
-                "name": "Climed a mountain",
-                "achieved" : false
-            },{
-                "file": baseDir + "badge 6.png",
-                "name": "Climed a mountain",
-                "achieved" : false
-            },{
-                "file": baseDir + "badge1.png",
-                "name": "Climed a mountain",
-                "achieved" : false
-            } ];
+                "name": "7 Wonders",
+                "achieved": false
+            }, {
+                "file": baseDir + "badge 4.png",
+                "name": "Extreme Sport",
+                "achieved": false
+            }, {
+                "file": baseDir + "badge 5.png",
+                "name": "Diving Tour",
+                "achieved": false
+            }];
 
         }
 ]);

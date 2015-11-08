@@ -39,6 +39,14 @@ angular
                     templateUrl: 'modules/core/views/login.html',
                     controller: 'LoginController'
                 })
+
+			    
+			     .state('dreamlist', {
+                    url: '/dreamlist',
+                    templateUrl: 'modules/core/views/dreamlist.html',
+                    controller: 'DreamlistController'
+                  })
+
             .state('profile', {
                     url: '/profile',
                     templateUrl: 'modules/core/views/profile.html',

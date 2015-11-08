@@ -14,6 +14,14 @@ body {
   background-size: cover;
 }
 
+.dreamimage {
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  
+}
+
 section {
   background: rgba(255,255,255,0.9);
   border-radius: 3px;
@@ -35,4 +43,18 @@ section {
 
 .profile-avatar {
    border-radius: 50%;
+}
+
+.not-achieved {
+     -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+       -ms-filter: grayscale(100%);
+           filter: grayscale(100%); 
+}
+
+
+.badgesize {
+    width: 150px;
+    height: 150px
 }
