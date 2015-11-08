@@ -42,7 +42,7 @@ $scope.valueRange = [0,100];
         }
       ];
      $timeout(function(){
-     	debugger;
+     	
      	$scope.worldData = [
         {
           "countryCode": "AFG",

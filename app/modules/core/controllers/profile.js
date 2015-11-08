@@ -32,12 +32,13 @@ angular
                 "name": "Art lovers",
                 "achieved": true
             }, {
-                "file": baseDir + "badge3.png",
-                "name": "7 Wonders",
-                "achieved": false
-            }, {
                 "file": baseDir + "badge 4.png",
                 "name": "Extreme Sport",
+                "achieved": true
+            },
+             {
+                "file": baseDir + "badge3.png",
+                "name": "7 Wonders",
                 "achieved": false
             }, {
                 "file": baseDir + "badge 5.png",

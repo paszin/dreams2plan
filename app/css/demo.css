@@ -14,13 +14,18 @@ body {
   background-size: cover;
 }
 
+
+.tweettrip{
+  color: #4099FF;
+}
 .dreamimage {
   background-position: center; 
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
+  height: 250px;
   
 }
+
 
 section {
   background: rgba(255,255,255,0.9);
@@ -64,4 +69,13 @@ section {
   opacity: 1; 
   background-color: rgba(0,0,0,0.6); 
   // The rest of your CSS
+}
+
+md-tab-content {
+    flex: auto;
+    flex-direction: row;
+}
+md-tab-content div {
+    flex: auto;
+    flex-direction: row;
 }

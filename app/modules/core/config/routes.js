@@ -39,8 +39,6 @@ angular
                     templateUrl: 'modules/core/views/login.html',
                     controller: 'LoginController'
                 })
-
-			    
 			     .state('dreamlist', {
                     url: '/dreamlist',
                     templateUrl: 'modules/core/views/dreamlist.html',
@@ -51,6 +49,11 @@ angular
                     url: '/profile',
                     templateUrl: 'modules/core/views/profile.html',
                     controller: 'ProfileController'
-                });
-            }
+                })
+            .state('home', {
+                    url: '/home',
+                    templateUrl: 'modules/core/views/home.html',
+                    controller: 'HomeController'
+            })
+        }
     ]);

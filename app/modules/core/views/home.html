@@ -1,2 +1,6 @@
-<div flex>
-</div>
+
+   <md-tabs flex class="md-primary" md-selected="selectedIndex">
+        <md-tab ng-repeat="tab in tabs" label="{{tab.title}}"  layout="row" flex>            
+            <div layout="row" flex ng-include="tab.content"></div>
+        </md-tab>
+    </md-tabs>
