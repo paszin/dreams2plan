@@ -1,7 +1,10 @@
 
+<div>
+  <h1 class="dreamlistheader">My DreamsBox</h1>
+</div>
 
-<div ng-Controller="DreamlistController" layout="row" layout-wrap layout-align="center start">
-<md-card ng-repeat="dream in dreams" style="width:300px; height:600px; overflow-y: scroll;">
+<div ng-Controller="DreamlistController" layout="row" layout-wrap layout-align="center start" >
+<md-card ng-repeat="dream in dreams" style="width:300px;">
   <div ng-style="{'background-image': 'url(' + dream.imagePath + ')'}" class="md-card-image dreamimage" alt="Image not Found!" layout="row" layout-align="center center">
   <i ng-if="dream.visited == 'true'" class="fa fa-check fa-4x"/>
   </div>

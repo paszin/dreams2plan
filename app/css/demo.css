@@ -47,6 +47,14 @@ section {
 	color: white;
 }
 
+.dreamlistheader{
+  font-size: 40pt;
+  text-align: center;
+  font-family: 'cool', Helvetica, Verdana, Sans-Serif;
+  color: #4099FF;
+}
+
+
 .profile-avatar {
    border-radius: 50%;
 }
