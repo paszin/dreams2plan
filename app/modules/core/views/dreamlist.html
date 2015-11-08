@@ -1,21 +1,20 @@
 
-<div layout="row" layout-wrap>
+<div layout="row" layout-wrap layout-align="center start">
 <md-card ng-repeat="dream in dreams" style="width:300px">
-  <img ng-src="{{dream.imagePath}}" class="md-card-image" alt="Washed Out">
+  <div ng-style="{'background-image': 'url(' + dream.imagePath + ')'}" class="md-card-image dreamimage" alt="Image not Found!"></div>
   <md-card-content>
     <h2 class="md-title">{{dream.title}}</h2>
-    <p>
+    <p class="desc_hover">
       {{dream.content}}
     </p>
   </md-card-content>
 
+  <div flex> </div>
+
   <md-card-actions layout="row" layout-align="end center">
 
-          <md-button aria-label="Twitter">
-             <md-icon icon="img/icons/twitter.svg"></md-icon>
-          </md-button>
-          <md-button aria-label="Facebook">
-          </md-button>
+          <md-button aria-label="Book Now">Book Now</md-button>
+          <md-button ng-if="dream.visited" aria-label="Facebook">         </md-button>
           <md-button aria-label="Google Hangout">
           </md-button>
         </md-fab-actions>
