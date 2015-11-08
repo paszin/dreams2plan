@@ -8,21 +8,21 @@
  */
 angular
     .module('core')
-    .controller('HomeController', ['$rootScope', '$scope',
-        function($rootScope, $scope) {
-            
+    .controller('HomeController', ['$rootScope', '$scope', '$log',
+        function ($rootScope, $scope, $log) {
+
             var viewsFolder = "/modules/core/views/"
             $scope.tabs = [
                 {
                     title: 'Dreams2Plan',
                     content: viewsFolder + "login.html",
-                   
+
                     },
                 {
                     title: 'You',
                     content: viewsFolder + "profile.html",
-                   
-                    
+
+
                     },
                 {
                     title: 'Dreambox',
@@ -39,7 +39,12 @@ angular
         ];
 
             $rootScope.selectedIndex = 0;
-          
+
+            $rootScope.$watch('selectedIndex', function (current, old) {
+                console.log("selected");
+                
+            });
+
 
         }
     ]);
