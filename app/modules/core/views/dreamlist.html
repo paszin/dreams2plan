@@ -1,7 +1,10 @@
 
 <div layout="row" layout-wrap layout-align="center start">
 <md-card ng-repeat="dream in dreams" style="width:300px">
-  <div ng-style="{'background-image': 'url(' + dream.imagePath + ')'}" class="md-card-image dreamimage" alt="Image not Found!"></div>
+  <div ng-style="{'background-image': 'url(' + dream.imagePath + ')'}" class="md-card-image dreamimage" alt="Image not Found!" layout="row" layout-align="center center">
+  <i ng-if="dream.visited == 'true'" class="fa fa-check fa-4x"/>
+
+  </div>
   <md-card-content>
     <h2 class="md-title">{{dream.title}}</h2>
     <p class="desc_hover">
@@ -11,13 +14,10 @@
 
   <div flex> </div>
 
-  <md-card-actions layout="row" layout-align="end center">
+  <md-card-actions layout="row" layout-align="center end">
 
-          <md-button aria-label="Book Now">Book Now</md-button>
-          <md-button ng-if="dream.visited" aria-label="Facebook">         </md-button>
-          <md-button aria-label="Google Hangout">
-          </md-button>
-        </md-fab-actions>
+          <md-button ng-if="dream.visited == 'false'"class="md-primary">Book Now</md-button>
+          <i ng-if="dream.visited == 'true'" class="fa fa-twitter fa-2x tweettrip"/>      
 
   </md-card-actions>
 </md-card>
