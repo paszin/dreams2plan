@@ -37,7 +37,7 @@ angular
                 .state('demo', {
                     url: '/share',
                     templateUrl: 'modules/core/views/demo.html'
-                    
+
             })
         }
     ]);
