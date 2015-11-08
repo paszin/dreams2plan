@@ -45,6 +45,16 @@ angular
                     "name": "Diving Tour",
                     "achieved": false
             }];
+            
+            
+            $scope.saveDream = function() {
+                $scope.user.dream = '';
+                 $scope.badges.push({
+                            "file": baseDir + "badge5.png",
+                            "name": "Diving Tour",
+                            "achieved": false
+                        });
+            }
 
 
             $scope.showAddDream = function (ev) {

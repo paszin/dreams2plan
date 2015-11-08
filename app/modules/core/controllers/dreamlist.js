@@ -17,7 +17,8 @@ angular
 					title:"Dubai",
 					imagePath:"../img/dubai.jpg",
 					content:"Dubai sits on a golden sandy coastline in the Arabian Gulf, where the warm azure waves of the sea meet the desert",
-					visited:"true"
+					visited:"true",
+                    options: ["O1", "Opt2", "Opt3"]
 				 },
 
 				 {

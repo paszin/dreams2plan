@@ -16,17 +16,16 @@ angular
                 {
                     title: 'Dreams2Plan',
                     content: viewsFolder + "login.html",
-                    controller: undefined,
-                    callback: undefined
+                   
                     },
                 {
                     title: 'You',
                     content: viewsFolder + "profile.html",
-                    controller: "ProfileController",
-                    callback: 2,
+                   
+                    
                     },
                 {
-                    title: 'Destinations',
+                    title: 'Dreambox',
                     content: viewsFolder + "dreamlist.html",
                     call: undefined,
                     callback: undefined

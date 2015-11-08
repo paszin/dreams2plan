@@ -1,60 +1,71 @@
-<div ng-Controller="ProfileController" >
+<div ng-Controller="ProfileController">
 
-<div layout="row" layout-align="center center" flex>
-    <div style="max-width:800px" flex layout-fill layout="column">
-        <div layout="row" layout-align="space-around center" layout-margin>
-            <img width="150px" height="150px" layout-margin ng-src="{{imgUrl}}" class="profile-avatar" />
-            <h1>Hey {{name}}, follow your dreams!</h1>
-        </div>
-
-        <md-divider></md-divider>
-
-        <div layout="row" layout-align="center center" layout-margin>
-            <div flex="25" layout="column" layout-align="center center">
-                <h1>{{stats.continents}}</h1>
-                <h5>Continents</h5>
-            </div>
-            <div flex="25" layout="column" layout-align="center center">
-                <h1>{{stats.countries}}</h1>
-                <h5>Countries</h5>
-            </div>
-            <div flex="25" layout="column" layout-align="center center">
-                <h1>{{stats.trips}}</h1>
-                <h5>Trips</h5>
-            </div>
-            <div flex="25" layout="column" layout-align="center center">
-                <h1>{{stats.miles/1000}}k</h1>
-                <h5>Miles</h5>
-            </div>
-        </div>
-        <md-divider></md-divider>
-        <div flex></div>
-        <div layout="column" layout-align="center center" layout-margin>
-            <p style="font-size:25px">Achievements</p>
-            <div layout="row" layout-align="center center" layout-wrap>
-                <div ng-repeat="badge in badges" layout="column" layout-align="center center"><img layout-margin class="badgesize" ng-if="badge.achieved" ng-src="{{badge.file}}" />
-                    <p ng-if="badge.achieved">{{badge.name}}</p>
+    <div layout="row" layout-align="center center" flex>
+        <div style="max-width:800px" flex layout-fill layout="column">
+            <div layout="row" layout-align="space-around center" layout-margin>
+                <img width="150px" height="150px" layout-margin ng-src="{{imgUrl}}" class="profile-avatar" />
+                <div>
+                    <h1>Hey {{name}}, follow your dreams!</h1>
+                    <span layout="row">
+                    <md-input-container flex="50">
+                        <label>I would like to...</label>
+                        <input ng-submit="login()" ng-model="user.dream">
+                    </md-input-container>
+                        <md-button ng-click="saveDream()">Submit</md-button>
+                        </span>
                 </div>
             </div>
-            <div layout="row" layout-align="center center" layout-wrap>
-                <div ng-repeat="badge in badges" layout="column" layout-align="center center"><img layout-margin ng-if="badge.achieved == false" class="badgesize not-achieved" ng-src="{{badge.file}}" />
-                    <p ng-if="badge.achieved == false">{{badge.name}}</p>
+
+            <md-divider></md-divider>
+
+            <div layout="row" layout-align="center center" layout-margin>
+                <div flex="25" layout="column" layout-align="center center">
+                    <h1>{{stats.continents}}</h1>
+                    <h5>Continents</h5>
+                </div>
+                <div flex="25" layout="column" layout-align="center center">
+                    <h1>{{stats.countries}}</h1>
+                    <h5>Countries</h5>
+                </div>
+                <div flex="25" layout="column" layout-align="center center">
+                    <h1>{{stats.trips}}</h1>
+                    <h5>Trips</h5>
+                </div>
+                <div flex="25" layout="column" layout-align="center center">
+                    <h1>{{stats.miles/1000}}k</h1>
+                    <h5>Miles</h5>
                 </div>
             </div>
+            <md-divider></md-divider>
+            <div flex></div>
+            <div layout="column" layout-align="center center" layout-margin>
+                <p style="font-size:25px">Achievements</p>
+                <div layout="row" layout-align="center center" layout-wrap>
+                    <div ng-repeat="badge in badges" layout="column" layout-align="center center"><img layout-margin class="badgesize" ng-if="badge.achieved" ng-src="{{badge.file}}" />
+                        <p ng-if="badge.achieved">{{badge.name}}</p>
+                    </div>
+                </div>
+                <div layout="row" layout-align="center center" layout-wrap>
+                    <div ng-repeat="badge in badges" layout="column" layout-align="center center"><img layout-margin ng-if="badge.achieved == false" class="badgesize not-achieved" ng-src="{{badge.file}}" />
+                        <p ng-if="badge.achieved == false">{{badge.name}}</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+
 
     </div>
 
+    <div class="footer">
+        <div class="container">
+            <p class="text-muted">
+                <md-button class="md-fab md-primary" aria-label="Eat cake" ng-click="showAddDream($event)"><i class="fa fa-plus"></i>
+                </md-button>
+            </p>
 
-
-</div>
-
- <div class="footer">
-  <div class="container">
-    <p class="text-muted"> <md-button class="md-fab md-primary" aria-label="Eat cake" ng-click="showAddDream($event)"><i class="fa fa-plus"></i>
-        </md-button></p>
-
-  </div>
-</div>
+        </div>
+    </div>
 
 </div>
