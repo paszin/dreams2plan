@@ -9,10 +9,17 @@
 angular
     .module('core')
     .controller('LoginController', [
-        '$scope',
-        function($scope) {
+        '$rootScope', '$scope',
+        function($rootScope, $scope) {
             
+            $scope.user = {};
+            $scope.user.name = "Fabi";
+            $scope.user.password = "undefined";
             
+            $scope.login = function() {
+                
+                $rootScope.selectedIndex = 1;
+            }
                 
 
         }

@@ -9,22 +9,22 @@
                 <section layout="column" layout-align="center center" layout-padding flex="70">
                     <md-input-container layout-fill>
                         <label>Username</label>
-                        <input ng-model="$root.username">
+                        <input ng-model="user.name">
                     </md-input-container>
                     <md-input-container layout-fill>
                         <label>Password</label>
-                        <input ng-model="user.password" type="email">
+                        <input ng-model="user.password" type="password">
                     </md-input-container>
                     <div layout-fill layout="row">
                         <div flex></div>
-                        <md-button flex="30" class="md-raised md-primary" ng-href="#/dreamlist">Log In</md-button>
+                        <md-button flex="30" class="md-raised md-primary" ng-click="login()">Log In</md-button>
                         <div flex="10"></div>
                         <md-button flex="30" class="md-raised">Register</md-button>
                         <div flex></div>
                     </div>
                     <div layout-fill layout="row">
                         <div flex></div>
-                        <md-button layout-fill flex="70" ui-sref="profile" class="md-raised md-primary" ng-click="facebookClick()">
+                        <md-button layout-fill flex="70" ui-sref="profile" class="md-raised md-primary" ng-click="login()">
                             <md-icon md-font-icon="fa-facebook" class="fa fa-2x"></md-icon>
                             <h4>Facebook login</h4>
                         </md-button>

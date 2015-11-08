@@ -9,7 +9,7 @@
 angular
     .module('core')
     .controller('ProfileController', [
-        '$scope', '$mdDialog', 
+        '$scope', '$mdDialog',
         function ($scope, $mdDialog) {
 
             $scope.imgUrl = "https://pbs.twimg.com/profile_images/651641074373427200/fkGcfovZ.jpg";
@@ -24,26 +24,26 @@ angular
 
             var baseDir = "/img/badges/";
             $scope.badges = [{
-                "file": baseDir + "badge1.png",
-                "name": "Climed a mountain",
-                "achieved": true
+                    "file": baseDir + "badge1.png",
+                    "name": "Climed a mountain",
+                    "achieved": true
             }, {
-                "file": baseDir + "badge2.png",
-                "name": "Art lovers",
-                "achieved": true
+                    "file": baseDir + "badge2.png",
+                    "name": "Art lovers",
+                    "achieved": true
             }, {
-                "file": baseDir + "badge4.png",
-                "name": "Extreme Sport",
-                "achieved": true
+                    "file": baseDir + "badge4.png",
+                    "name": "Extreme Sport",
+                    "achieved": true
             },
-             {
-                "file": baseDir + "badge3.png",
-                "name": "7 Wonders",
-                "achieved": false
+                {
+                    "file": baseDir + "badge3.png",
+                    "name": "7 Wonders",
+                    "achieved": false
             }, {
-                "file": baseDir + "badge5.png",
-                "name": "Diving Tour",
-                "achieved": false
+                    "file": baseDir + "badge5.png",
+                    "name": "Diving Tour",
+                    "achieved": false
             }];
 
 
@@ -56,7 +56,12 @@ angular
                         clickOutsideToClose: true
                     })
                     .then(function (answer) {
-                        $scope.status =  answer;
+                        $scope.status = answer;
+                        $scope.badges.push({
+                            "file": baseDir + "badge5.png",
+                            "name": "Diving Tour",
+                            "achieved": false
+                        });
                         console.log(answer);
                     }, function () {
                         $scope.status = undefined;
@@ -69,14 +74,13 @@ angular
 
 
 function DialogController($scope, $mdDialog) {
-  $scope.hide = function() {
-    $mdDialog.hide();
-  };
-  $scope.cancel = function() {
-    $mdDialog.cancel();
-  };
-  $scope.save = function() {
-    $mdDialog.hide($scope.user.dream);
-  };
+    $scope.hide = function () {
+        $mdDialog.hide();
+    };
+    $scope.cancel = function () {
+        $mdDialog.cancel();
+    };
+    $scope.save = function () {
+        $mdDialog.hide($scope.user.dream);
+    };
 }
-

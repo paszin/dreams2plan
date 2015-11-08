@@ -8,8 +8,8 @@
  */
 angular
     .module('core')
-    .controller('HomeController', ['$scope',
-        function($scope) {
+    .controller('HomeController', ['$rootScope', '$scope',
+        function($rootScope, $scope) {
             
             var viewsFolder = "/modules/core/views/"
             $scope.tabs = [
@@ -39,7 +39,7 @@ angular
                     }
         ];
 
-            $scope.selectedIndex = 0;
+            $rootScope.selectedIndex = 0;
           
 
         }
