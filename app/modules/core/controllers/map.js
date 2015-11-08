@@ -54,7 +54,7 @@ angular
         },
 
         {
-                    "countryCode": "BEL",
+                    "countryCode": "IND",
                     "value": 100
         },
 
