@@ -12,7 +12,7 @@ var ApplicationConfiguration = (function() {
         'ngAnimate', 
         
         'ngTouch', 
-        
+        'angular-maps',
         'ngSanitize', 
         'ui.router',
         'ui.bootstrap',
