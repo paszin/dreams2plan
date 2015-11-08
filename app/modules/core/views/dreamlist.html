@@ -2,17 +2,19 @@
 <div layout="column">
   <h1 class="dreamlistheader">My DreamBox</h1>
 
+
   <div ng-Controller="DreamlistController" layout="row" layout-wrap layout-align="center start" >
-  <md-card ng-repeat="dream in dreams" style="width:300px;">
+  <md-card ng-repeat="dream in dreams" style="width:300px;" ng-click="showAdventure(dream)" >
     <div ng-style="{'background-image': 'url(' + dream.imagePath + ')'}" class="md-card-image dreamimage" alt="Image not Found!" layout="column" layout-align="end center">
     <div flex layout="column" layout-align="center center">
         <i ng-if="dream.visited == 'true'" class="fa fa-check-circle" style="color:rgba(0, 180, 0, 0.7); font-size:100px;"/>
     </div>
     <h2 class="md-title" style="background-color:rgba(0,0,0,0.6); color:white; width:100%; padding:8px; margin: 0px; text-align:right">{{dream.title}}</h2>
     </div>
-
+    <div style="text-align:right; margin:8px">
+      Achieve {{dream.dreams.length}} dreams there
+    </div>
     <md-card-actions layout="row" layout-align="end end">
-
             <md-button ng-if="dream.visited == 'false'"class="md-primary md-raised">Book Now</md-button>
             <md-button ng-if="dream.visited == 'true'"class="fa fa-twitter fa-2x tweettrip md-raised md-primary" href="https://twitter.com/intent/tweet?text=Took%20a%20trip%20to%20my%20dream%20destination&hashtags=dreambox,emirates,checkoutmydreams,emiratestravelhackathon&url=http%3A%2F%2F127.0.0.1%3A9000%2F%23%21%2Fdreamlist"></md-button>
 

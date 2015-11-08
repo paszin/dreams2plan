@@ -29,27 +29,6 @@ angular
              *
             */
             $stateProvider
-                .state('map', {
-                    url: '/map',
-                    templateUrl: 'modules/core/views/map.html',
-                    controller: 'MapController'
-                }).
-            state('login', {
-                    url: '/',
-                    templateUrl: 'modules/core/views/login.html',
-                    controller: 'LoginController'
-                })
-			     .state('dreamlist', {
-                    url: '/dreamlist',
-                    templateUrl: 'modules/core/views/dreamlist.html',
-                    controller: 'DreamlistController'
-                  })
-
-            .state('profile', {
-                    url: '/profile',
-                    templateUrl: 'modules/core/views/profile.html',
-                    controller: 'ProfileController'
-                })
             .state('home', {
                     url: '/home',
                     templateUrl: 'modules/core/views/home.html',
