@@ -82,7 +82,7 @@ angular
                     imagePath: "../img/tahiti.png",
                     content: "",
                     visited: "false",
-                    dreams: ["Party on a private yacht", "Scuba dive"],
+                    dreams: [{name: "Party on a private yacht", img:'/img/badges/badge9.png'}, {name:"Scuba dive", img:'/img/badges/badge5.png'}],
                     wiki: "https://en.wikipedia.org/wiki/Tahiti"
                 }
 

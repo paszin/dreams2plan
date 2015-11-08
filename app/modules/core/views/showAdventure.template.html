@@ -24,12 +24,17 @@
                 </div>
                 </md-input-container>
                 <h2>Checklist for the trip</h2>
-                <div ng-repeat="item in adventure.dreams">
-                <p>{{item}}</p>
-
+                <div layout="row" layout-fill layout-align="space-around start">
+                    <div ng-repeat="item in adventure.dreams" layout="column" layout-align="start center">
+                        <img src="{{item.img}}" style="height:100px; width:100px"/>
+                        <p>{{item.name}}</p>
+                    </div>
                 </div>
 
             </div>
+            <md-button class="md-raised md-primary" style="width:800px; margin-left:50px;">
+                Book now for $4500
+            </md-button>
         </md-dialog-content>
         <md-dialog-actions layout="row">
             <md-button href="{{adventure.wiki}}" target="_blank" md-autofocus>
