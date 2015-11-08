@@ -78,12 +78,12 @@ angular
                 },
 
                 {
-                    title: "Tahiti",
+                    title: "Thailand",
                     imagePath: "../img/tahiti.png",
                     content: "",
                     visited: "false",
-                    dreams: [{name: "Party on a private yacht", img:'/img/badges/badge5.png'}, {name:"Scuba dive", img:'/img/badges/badge5.png'}],
-                    wiki: "https://en.wikipedia.org/wiki/Tahiti"
+                    dreams: [{name: "Party on a private yacht", img:'/img/badges/badge9.png'}, {name:"Scuba dive", img:'/img/badges/badge5.png'}],
+                    wiki: "https://en.wikipedia.org/wiki/Thailand"
                 }
 
 			    ];
