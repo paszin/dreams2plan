@@ -32,7 +32,7 @@ angular
                 "name": "Art lovers",
                 "achieved": true
             }, {
-                "file": baseDir + "badge 4.png",
+                "file": baseDir + "badge4.png",
                 "name": "Extreme Sport",
                 "achieved": true
             },
@@ -41,7 +41,7 @@ angular
                 "name": "7 Wonders",
                 "achieved": false
             }, {
-                "file": baseDir + "badge 5.png",
+                "file": baseDir + "badge5.png",
                 "name": "Diving Tour",
                 "achieved": false
             }];
