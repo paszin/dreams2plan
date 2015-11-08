@@ -28,6 +28,8 @@ module.exports = function(config) {
             'app/lib/angular-ui-router/release/angular-ui-router.js',
             'app/lib/angular-aria/angular-aria.js',
             'app/lib/angular-material/angular-material.js',
+            'app/lib/d3/index.js',
+            'app/lib/angular-map-it/js/angular-map-it.js',
             <!-- endinjector -->
 
             'app/js/config.js',

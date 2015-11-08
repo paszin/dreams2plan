@@ -23,10 +23,18 @@ angular
              *
              * Define routes and the associated paths
              *
-             * - When the path is `'/'`, route to home
-             * */
+             * - When the path is `'/'`, route to login
+             * - When the state is `'profil'`, route to profil
+             * - When the state is `'map'`, route to map
+             *
+            */
             $stateProvider
-                .state('login', {
+                .state('map', {
+                    url: '/map',
+                    templateUrl: 'modules/core/views/map.html',
+                    controller: 'MapController'
+                }).
+            state('login', {
                     url: '/',
                     templateUrl: 'modules/core/views/login.html',
                     controller: 'LoginController'
@@ -44,5 +52,5 @@ angular
                     templateUrl: 'modules/core/views/profile.html',
                     controller: 'ProfileController'
                 });
-        }
+            }
     ]);

@@ -16,6 +16,7 @@
 
     <!-- build:css styles/custom.css -->
         <!-- injector:css -->
+        <link rel="stylesheet" href="css/angular-map-it.css">
         <link rel="stylesheet" href="css/customcordova.css">
         <link rel="stylesheet" href="css/demo.css">
         <!-- endinjector -->
@@ -45,7 +46,6 @@
         </md-toolbar>
         <div ui-view flex layout="column"></div>
       </md-content>
-
     <!-- build:js scripts/vendor.js -->
         <!-- injector:bowerjs -->
         <script src="lib/jquery/dist/jquery.js"></script>
@@ -62,6 +62,8 @@
         <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
         <script src="lib/angular-aria/angular-aria.js"></script>
         <script src="lib/angular-material/angular-material.js"></script>
+        <script src="lib/d3/index.js"></script>
+        <script src="lib/angular-map-it/js/angular-map-it.js"></script>
         <!-- endinjector -->
     <!-- endbuild -->
 
@@ -74,6 +76,7 @@
         <script src="modules/core/controllers/dreamlist.js"></script>
         <script src="modules/core/controllers/home.js"></script>
         <script src="modules/core/controllers/login.js"></script>
+        <script src="modules/core/controllers/map.js"></script>
         <script src="modules/core/controllers/profile.js"></script>
         <!-- endinjector -->
     <!-- endbuild -->
