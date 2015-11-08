@@ -11,3 +11,10 @@ section {
   margin: 1em;
   position: relative !important;
   padding-bottom: 10px; }
+
+
+
+
+.profile-avatar {
+   border-radius: 50%;
+}

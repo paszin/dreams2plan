@@ -30,6 +30,11 @@ angular
                     url: '/',
                     templateUrl: 'modules/core/views/login.html',
                     controller: 'LoginController'
+                })
+            .state('profile', {
+                    url: '/profile',
+                    templateUrl: 'modules/core/views/profile.html',
+                    controller: 'ProfileController'
                 });
         }
     ]);

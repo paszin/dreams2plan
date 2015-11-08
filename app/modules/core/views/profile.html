@@ -1,0 +1,39 @@
+<div>
+    <div layout="column" layout-align="space-around center" layout-margin>
+        <img width="10%" height="10%" layout-margin ng-src="{{imgUrl}}" class="profile-avatar" />
+        <h1>{{name}}</h1>
+    </div>
+
+    <md-divider></md-divider>
+
+    <div layout="row" layout-align="center center" layout-margin>
+        <div flex="25" layout="column" layout-align="center center">
+            <h2>2</h2>
+            <h3>Continents</h3>
+        </div>
+        <div flex="25" layout="column" layout-align="center center">
+            <h2>12</h2>
+            <h3>Countries</h3>
+        </div>
+        <div flex="25" layout="column" layout-align="center center">
+            <h2>7k</h2>
+            <h3>Miles</h3>
+        </div>
+        <div flex="25" layout="column" layout-align="center center">
+            <h2>25</h2>
+            <h3>Countries</h3>
+        </div>
+    </div>
+    <md-divider></md-divider>
+    <div layout="column" layout-align="center center" layout-margin>
+        <p>ACHIEVEMENTS</p>
+        <div layout="row" layout-align="center center" layout-wrap>
+            <div ng-repeat="badge in badges" layout-margin><img ng-src="{{badge.file}}" />
+                <p>{{badge.name}}</p>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
