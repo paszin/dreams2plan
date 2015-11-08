@@ -25,15 +25,15 @@ angular
             var baseDir = "/img/badges/";
             $scope.badges = [{
                     "file": baseDir + "badge1.png",
-                    "name": "Climed a mountain",
+                    "name": "Mountaineer",
                     "achieved": true
             }, {
                     "file": baseDir + "badge2.png",
-                    "name": "Art lovers",
+                    "name": "Art Lover",
                     "achieved": true
             }, {
                     "file": baseDir + "badge4.png",
-                    "name": "Extreme Sport",
+                    "name": "Extreme Sportsman",
                     "achieved": true
             },
                 {
@@ -41,8 +41,8 @@ angular
                     "name": "7 Wonders",
                     "achieved": false
             }, {
-                    "file": baseDir + "badge5.png",
-                    "name": "Diving Tour",
+                    "file": baseDir + "badge6.png",
+                    "name": "Fly High",
                     "achieved": false
             }];
             
@@ -51,7 +51,7 @@ angular
                 $scope.user.dream = '';
                  $scope.badges.push({
                             "file": baseDir + "badge5.png",
-                            "name": "Diving Tour",
+                            "name": "Diver",
                             "achieved": false
                         });
             }
