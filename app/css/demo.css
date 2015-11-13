@@ -1,12 +1,3 @@
-body {
-
-	height: 720px !important;
-	min-height: 720px !important;
-	width: 1280px !important;
-	overflow: hidden;
-	border: solid 1px;
-}
-
 #backgroundimage {
   background-position: center;
   background-image: url('../img/beach.jpg');

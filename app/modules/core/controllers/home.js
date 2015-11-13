@@ -10,6 +10,8 @@ angular
     .module('core')
     .controller('HomeController', ['$rootScope', '$scope', '$log',
         function ($rootScope, $scope, $log) {
+            
+            $rootScope.myDreams = []
 
             var viewsFolder = "/modules/core/views/"
             $scope.tabs = [

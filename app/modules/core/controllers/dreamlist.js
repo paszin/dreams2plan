@@ -9,8 +9,10 @@
 angular
     .module('core')
     .controller('DreamlistController', [
-        '$scope', '$mdDialog',
-        function ($scope, $mdDialog) {
+        '$scope', '$mdDialog', 'Stubhub',
+        function ($scope, $mdDialog, Stubhub) {
+    
+    debugger;
 
             $scope.dreams = [{
                     title: "Dubai",
